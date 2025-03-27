@@ -1,0 +1,82 @@
+/* إعادة تعيين القيم الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif; /* خط عربي أنيق */
+}
+
+/* تنسيق الصفحة بالكامل */
+body {
+    background: linear-gradient(120deg, #64c707, #bbff00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* خلفية شفافة */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    font-size: 60px;
+    background: url('./jhkrwu58.png') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+/* تنسيق مربع الإدخال */
+input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #64c707;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #ff9800;
+}
+
+/* تنسيق زر الضغط */
+button {
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+/* تنسيق رسالة التهنئة */
+#greetingText {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
