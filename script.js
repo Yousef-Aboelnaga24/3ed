@@ -3,7 +3,8 @@ let button = document.getElementById('greetingBtn');
 button.addEventListener('click', function() {
     let name = document.getElementById('nameInp').value;
     let text = document.getElementById('greetingText');
-
+    
+    
     if (name === "") {
         text.innerHTML = 'ياريت تكتب اسم حضرتك'
         text.style.color = 'red';
@@ -11,6 +12,10 @@ button.addEventListener('click', function() {
         text.innerHTML = `🎉 كل عام وانت بخير ${name} 🎉`
         text.style.color = 'green';
         launchConfetti();
+        
+        let audio = new Audio('./Audio.mp3')
+        audio.currentTime = 0
+        audio.play();
     }
 });
 
